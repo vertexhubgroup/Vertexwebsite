@@ -24,17 +24,13 @@ body {
   position: relative;
 }
 
-.logo {
-    /* height: 2%;
-    width: 1%; */
-}
+
 
 .menu-icon {
   display: none;
 }
 
-.nav-elements {
-}
+
 
 .nav-elements ul {
   display: flex;

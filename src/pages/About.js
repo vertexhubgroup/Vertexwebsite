@@ -1,18 +1,17 @@
 import React from "react";
 import "./pages.css";
-import image from "./../rainbow.jpg";
-import image2 from "./../unsplash.jpg";
+
 const About = () => {
   return (
     <>
-    <div className="content">
-      <div>
-        <div className="about">
-          <h1>About Us</h1>
-        </div>
+      <div className="content">
+        <div>
+          <div className="about">
+            <h1>About Us</h1>
+          </div>
 
-        <div className="image1"></div>
-        <br />
+          <div className="image1"></div>
+        </div>
         <br />
         <br />
 
@@ -29,10 +28,19 @@ const About = () => {
             the individuals working in the organisation
           </p>
         </div>
-        <div className="image2">
-          <p></p>
+        <div className="portrait">
+          <br />
+          <h2>Our Mission</h2>
+          <br />
+
+          <p>
+            Our Mission is to address our cutsomers' pain areas such 
+            <br />
+            that the customers may focus on their core business.
+          </p>
+          <div className="logo"></div>
+
         </div>
-      </div>
       </div>
     </>
   );
