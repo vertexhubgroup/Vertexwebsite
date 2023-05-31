@@ -1,10 +1,11 @@
 import React from 'react';
+import "./pages.css"
 const Services = () => {
 	
 return (
 	<>
-		<h1 >
-			Welcome to Vertexhub Group</h1>
+		<p  className='services'>
+			Welcome to Vertexhub Group</p>
 	</>
 )
 };
