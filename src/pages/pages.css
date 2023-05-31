@@ -5,6 +5,9 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.content {
+    margin-top: 50px; 
+  }
 .image1 {
   background-image: url(./../rainbow.jpg);
   position: absolute;
@@ -17,7 +20,32 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
+.image2 {
+    background-image: url(./../unsplash.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .image2 {
+    background-image: url(./../building.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 .about {
+    margin-top: 7%;
   background-color: #5BC82D;
   width: 50%;
   opacity: 70%;
@@ -30,3 +58,8 @@
   font-size: xx-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.paragraph{
+    display: grid;
+    text-align: center;
+    font-size: small;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
