@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Home = () => {
+const Careers = () => {
 	
 return (
 	<>
 		<h1 >
 			Welcome to Vertexhub Group</h1>
-			<p>This is home page</p>
+            <p>This is careers page</p>
 	</>
 )
 };
 
-export default Home;
+export default Careers;
