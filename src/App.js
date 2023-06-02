@@ -7,12 +7,13 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
 import Careers from "./pages/Careers";
+import  Footer  from "./components/Footer";
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <h3>This is the beginning</h3>
       <Routes>
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contacts />} />
 
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
