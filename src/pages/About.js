@@ -1,5 +1,6 @@
 import React from "react";
 import "./pages.css";
+import Carousel from "../components/Carousel";
 
 const About = () => {
   return (
@@ -28,20 +29,20 @@ const About = () => {
             the individuals working in the organisation
           </p>
         </div>
+
         <div className="portrait">
           <br />
           <h2>Our Mission</h2>
           <br />
-
           <p>
-            Our Mission is to address our cutsomers' pain areas such 
+            Our Mission is to address our cutsomers' pain areas such
             <br />
             that the customers may focus on their core business.
           </p>
-          <div className="logo"></div>
-
         </div>
+        {/* <div className="content"></div> */}
       </div>
+      <Carousel/>
     </>
   );
 };

@@ -42,23 +42,23 @@ const Footer = () => {
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
+                <span style={{ marginLeft: "20px" }}>Instagram</span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
+                <span style={{ marginLeft: "20px" }}>Twitter</span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
+                <span style={{ marginLeft: "20px" }}>Youtube</span>
               </i>
             </FooterLink>
           </Column>
         </Row>
       </Container>
-      <div className="companyinfo" style={{color:"white" }}>
+      <div className="companyinfo" style={{color:"black" , paddingLeft:"30%" }}>
       <p>All rights reserved by Vertexhub Group. Copyright ©2023</p>
 
       </div>

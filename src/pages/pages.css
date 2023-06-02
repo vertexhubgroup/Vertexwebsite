@@ -47,20 +47,12 @@
     background-image: url(./../vertexlogo.png); 
  
 }
+/* .content{ */
+  /* background-image: url('./../boxed-water-is-better-jbcY_yvsDzk-unsplash.jpg'); /* Replace with your image path */
+  /* background-repeat: no-repeat; */
+/* }  */
 
-/* .image2 {
-    background-color: yellow;
-    background-image: url(./../building.jpg); */
-/* top: 0;
-    
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1; */
-/* } */
+
 .about {
   margin-top: 7%;
   background-color: white;
