@@ -14,7 +14,10 @@ const Contacts = () => {
             <div className="image1"></div>
           </div>
         </div>
-        {/* <div
+        <div>
+          <ContactForm />
+        </div>
+		<div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -39,14 +42,9 @@ const Contacts = () => {
           <div>
             <h5>Email:</h5>
             <p>info@vertexhubgroup.com</p>
-          </div> */}
-		  <div>
-        <ContactForm />
+          </div>
+		  </div>
       </div>
-        {/* </div> */}
-		
-      </div>
-     
     </>
   );
 };
