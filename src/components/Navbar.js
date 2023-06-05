@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import brand from "./../vertexlogo.png"
 // import { ReactComponent as Hamburger } from '../../assets/icons/hamburger.svg'
 // import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 import './Navbar.css'
@@ -16,11 +17,11 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           {/* <Brand /> */}
-          {/* <img 
-          src={require('./../vertexlogo.png')} 
+          <img 
+          src={brand} 
           alt="logo" 
-        /> */}
-          <p>logo</p>
+        />
+          {/* <p>logo</p> */}
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
 
