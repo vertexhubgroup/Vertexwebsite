@@ -1,7 +1,6 @@
 import React from "react";
 import "./pages.css";
-import Carousel from "../components/Carousel";
-
+import ImageCarousel from "../components/ImageCarousel"
 const About = () => {
   return (
     <>
@@ -42,7 +41,10 @@ const About = () => {
         </div>
         {/* <div className="content"></div> */}
       </div>
-      <Carousel/>
+      <div>
+      <ImageCarousel/>
+
+      </div>
     </>
   );
 };
