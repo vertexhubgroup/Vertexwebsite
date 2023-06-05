@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./../vertexlogo.png";
 import boxed from "./../boxed.jpg";
 import bren from "./../bren.jpg"
+import ImageGrid from "../components/ImageGrid";
 const Home = () => {
   return (
     <>
@@ -61,7 +62,9 @@ const Home = () => {
     <div class="text">Check this out</div>
   </div>
 </div>
-      
+     <div>
+        <ImageGrid/>
+        </div> 
     </>
   );
 };
