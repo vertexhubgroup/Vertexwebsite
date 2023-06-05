@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./../vertexlogo.png";
-
+import boxed from "./../boxed.jpg";
+import bren from "./../bren.jpg"
 const Home = () => {
   return (
     <>
@@ -21,6 +22,8 @@ const Home = () => {
       <br />
       <br />
       <div className="middlecontent">
+        <br />
+
         <h1>Why Vertexhubgroup?</h1>
         <h5>
           we are a leading provider of analytics software,solutions and services
@@ -34,33 +37,31 @@ const Home = () => {
           {" "}
           <span>"</span>
         </strong>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <p>
           we are a leading provider of analytics software,solutions and services
           that transform <br />
           the way organizations understand their customers and optimize business
           processes around them.
         </p>
-        <img
-          src={logo}
-          alt="Your Image"
-          className="image"
-        />
+        <img src={logo} alt="Your Image" className="image" />
         <strong>
           {" "}
           <span>"</span>
         </strong>{" "}
       </div>
-      <div>
-        
-      </div>
-    
+      <div class="containerhover">
+  <img src={bren} alt="bren" class="imagenew"/>
+  <div class="overlay">
+    <div class="text">Check this out</div>
+  </div>
+</div>
+      
     </>
   );
 };
