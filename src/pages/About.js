@@ -1,6 +1,11 @@
 import React from "react";
 import "./pages.css";
-import ImageCarousel from "../components/ImageCarousel"
+import logo1 from "./../logo1.png";
+import logo2 from "./../logo2.png";
+import logo3 from "./../logo3.png";
+import logo4 from "./../logo4.png";
+import logo5 from "./../logo5.png";
+import ImageCarousel from "../components/ImageCarousel";
 const About = () => {
   return (
     <>
@@ -29,7 +34,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="portrait">
+        {/* <div className="portrait">
           <br />
           <h2>Our Mission</h2>
           <br />
@@ -38,12 +43,72 @@ const About = () => {
             <br />
             that the customers may focus on their core business.
           </p>
+        </div> */}
+        <div className="cont">
+          <div className="background-image">
+            <div className="green-box">
+              <p className="text">
+                <h2>Our Mission</h2>
+                Our Mission is to address our cutsomers' pain areas such
+                <br />
+                that the customers may focus on their core business.
+                <nav aria-label="Page navigation example" className="pagen">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </p>
+            </div>
+          </div>
         </div>
-        {/* <div className="content"></div> */}
       </div>
-      <div>
-      {/* <ImageCarousel/> */}
-
+      <h2 style={{ textAlign: "center" }}>Our Patners</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src={logo1} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo2} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo3} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo4} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo5} alt="Your Image" className="logos" />
+        </div>
       </div>
     </>
   );

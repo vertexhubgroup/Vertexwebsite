@@ -44,7 +44,8 @@
   background-repeat: no-repeat;
   z-index: -1; 
 }
-.portrait {
+/* .portrait {
+
   justify-content: flex-end;
   background-color: rgb(226, 102, 102);
   margin-left: 50%;
@@ -53,7 +54,9 @@
   opacity: 70%;
   padding-left: 7%;
   height: 50vh;
-}
+} */
+
+
 .logo{
  height: 10%;
  width: 10%;
@@ -167,3 +170,37 @@
   max-width: 100%;
 }
 
+.cont {
+  position: relative;
+  height: 70vh; 
+  background-image: url("./../boxed.jpg"); /* Replace "background-image.jpg" with the path to your background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100%;
+}
+
+
+.text {
+  height: 40vh;
+  width: 40vw;
+  color: black;
+  padding: 20px;
+  align-items: center;
+  /* justify-content: flex-end; */
+  background-color: rgb(226, 102, 102);
+  margin-left: 100%;
+  margin-top: 1%;
+  opacity: 70%;
+  /* padding-left: 7%; */
+}
+
+.pagen{
+  padding-left: 80px;
+}

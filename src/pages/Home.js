@@ -12,6 +12,7 @@ import ImageCarousel from "../components/ImageCarousel";
 const Home = () => {
   return (
     <>
+    <title>Vertexhb group</title>
       <div>
         <div className="content">
           <div>
@@ -62,8 +63,10 @@ const Home = () => {
           <span>"</span>
         </strong>{" "}
       </div>
-      <h2>mimi ni lucy</h2>
+      <h2 style={{textAlign:"center"}}>Our Patners</h2>
       <div class="grid-container">
+
+        
         <div class="grid-item">
           <img src={logo1} alt="Your Image" className="logos" />
         </div>
