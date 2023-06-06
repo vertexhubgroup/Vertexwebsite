@@ -5,6 +5,7 @@ import logo2 from "./../logo2.png";
 import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
+import bren from "./../bren.jpg"
 import ImageCarousel from "../components/ImageCarousel";
 const About = () => {
   return (
@@ -88,6 +89,32 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div class="carousel">
+  <div class="slide active">
+    <img src={bren} alt="Slide 1" />
+    <div class="slide-content">
+      <h2>Slide 1</h2>
+      <p>Text for Slide 1</p>
+    </div>
+  </div>
+  <div class="slide">
+    <img src={bren} alt="Slide 2" />
+    <div class="slide-content">
+      <h2>Slide 2</h2>
+      <p>Text for Slide 2</p>
+    </div>
+  </div>
+  <div class="slide">
+    <img src={bren} alt="Slide 3" />
+    <div class="slide-content">
+      <h2>Slide 3</h2>
+      <p>Text for Slide 3</p>
+    </div>
+  </div>
+</div>
+
+<div class="pagination"></div>
+
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
       <div class="grid-container">
         <div class="grid-item">

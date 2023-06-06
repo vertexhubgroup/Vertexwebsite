@@ -33,7 +33,7 @@ const Footer = () => {
             <FooterLink href="#">Privacy Policy</FooterLink>
            
           </Column>
-          <Column>
+          <Column className="social-media"  style={{display:"block"}}>
             <Heading>Social Media</Heading>
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
