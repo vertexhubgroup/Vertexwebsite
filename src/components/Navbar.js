@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import brand from "./../vertexlogo.png"
-// import { ReactComponent as Hamburger } from '../../assets/icons/hamburger.svg'
-// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
+import logo1 from "./../vertexhubwhite_adobe_express.svg"
+import logo2 from "./../Vertexhubblack .png"
+import Hamburger from "./../burger-menu.svg"
+
 import './Navbar.css'
 
 const Navbar = () => {
@@ -16,18 +18,16 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          {/* <Brand /> */}
           <img 
-          src={brand} 
+          src={logo1} 
           alt="logo" 
         />
-          {/* <p>logo</p> */}
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-
-          <p>ham</p>
-          {/* <Hamburger /> */}
-        </div>
+          <img 
+          src={Hamburger} 
+          alt="logo" 
+        />        </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
             <li>
@@ -36,7 +36,6 @@ const Navbar = () => {
             <li>
               <NavLink to="/services">Services</NavLink>
             </li>
-           
             <li>
               <NavLink to="/about">About Us</NavLink>
             </li>
@@ -53,4 +52,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

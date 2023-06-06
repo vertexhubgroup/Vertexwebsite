@@ -46,7 +46,6 @@
 }
 .portrait {
   justify-content: flex-end;
-  /* align-items: center; */
   background-color: rgb(226, 102, 102);
   margin-left: 50%;
   margin-top: 1%;
@@ -59,12 +58,6 @@
  height: 10%;
  width: 10%;
 }
-/* .content{ */
-  /* background-image: url('./../boxed-water-is-better-jbcY_yvsDzk-unsplash.jpg'); /* Replace with your image path */
-  /* background-repeat: no-repeat; */
-/* }  */
-
-
 .about {
   margin-top: 7%;
   background-color: white;
@@ -84,14 +77,12 @@
   padding-left: 30px;
 }
  img{
-  /* padding-top: 10%; */
   height: 30%;
   width: 30%;
   margin-left: 60%;
 }
 .quotes p{
   padding-left: 10%;
-  /* text-align: center; */
 }
 .middlecontent{
   text-align: center;
@@ -120,19 +111,14 @@
 }*, ::after, ::before {
   box-sizing: border-box;
 }
-/* Container needed to position the overlay. Adjust the width as needed */
 .containerhover {
   position: relative;
   width: 50%;
 }
-
-/* Make the image to responsive */
 .imagenew {
   width: 570px;
   height: 465px;
 }
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -145,13 +131,9 @@
   transform: scale(0);
   transition: .3s ease;
 }
-
-/* When you mouse over the container, the overlay text will "zoom" in display */
 .containerhover:hover .overlay {
   transform: scale(1);
 }
-
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .text {
   color: white;
   font-size: 20px;
@@ -161,3 +143,27 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns with equal width */
+  gap: 10px; 
+}
+
+
+
+.grid-item {
+  background-color: white;
+  margin-right: 70px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item img {
+  width: auto;
+  height: 50px;
+  max-width: 100%;
+}
+

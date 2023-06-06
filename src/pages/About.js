@@ -42,7 +42,7 @@ const About = () => {
         {/* <div className="content"></div> */}
       </div>
       <div>
-      <ImageCarousel/>
+      {/* <ImageCarousel/> */}
 
       </div>
     </>

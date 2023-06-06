@@ -1,8 +1,14 @@
 import React from "react";
 import logo from "./../vertexlogo.png";
+import logo1 from "./../logo1.png";
+import logo2 from "./../logo2.png";
+import logo3 from "./../logo3.png";
+import logo4 from "./../logo4.png";
+import logo5 from "./../logo5.png";
 import boxed from "./../boxed.jpg";
-import bren from "./../bren.jpg"
+import bren from "./../bren.jpg";
 import ImageGrid from "../components/ImageGrid";
+import ImageCarousel from "../components/ImageCarousel";
 const Home = () => {
   return (
     <>
@@ -56,15 +62,28 @@ const Home = () => {
           <span>"</span>
         </strong>{" "}
       </div>
-      <div class="containerhover">
-  <img src={bren} alt="bren" class="imagenew"/>
-  <div class="overlay">
-    <div class="text">Check this out</div>
-  </div>
-</div>
-     <div>
-        <ImageGrid/>
-        </div> 
+      <h2>mimi ni lucy</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src={logo1} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo2} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo3} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo4} alt="Your Image" className="logos" />
+        </div>
+        <div class="grid-item">
+          {" "}
+          <img src={logo5} alt="Your Image" className="logos" />
+        </div>
+      </div>
     </>
   );
 };
