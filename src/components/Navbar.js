@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import brand from "./../vertexlogo.png"
-import logo1 from "./../vertexhubwhite_adobe_express.svg"
-import logo2 from "./../Vertexhubblack .png"
-import Hamburger from "./../burger-menu.svg"
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import brand from "./../vertexlogo.png";
+import logo1 from "./../Vertexhubblack .png";
+import logo2 from "./../Vertexhubblack .png";
+import Hamburger from "./../burger-menu.svg";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import './Navbar.css'
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
+    setShowNavbar(!showNavbar);
+  };
 
   return (
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <img 
-          src={logo1} 
-          alt="logo" 
-        />
+          <img src={logo2} alt="logo" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <img 
-          src={Hamburger} 
-          alt="logo" 
-        />        </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <FontAwesomeIcon icon={faBars} shake size="lg" />
+        </div>
+        <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
@@ -49,7 +48,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;

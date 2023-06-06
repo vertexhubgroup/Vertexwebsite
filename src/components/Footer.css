@@ -1,7 +1,31 @@
 
-.companyinfo{
+	.newsletter .content {
+	margin:  auto;
+	text-align: center;
+	position: relative;
+	/* z-index: 2; */
+ }
+	.newsletter .content p {
+	color: black;
+}
+	.newsletter .content .form-control {
+	height: 8vh;
+	border-color: #ffffff;
+	border-radius:0;
+	width: 7vw;
+	}
+	.newsletter .content.form-control:focus {
+	border: 1px solid #243c4f;
+	}
+	.newsletter .content .btn {
+	min-height: 8vh; 
+	width: 5vw;
+	border-radius:15;
+	background: hsl(123, 62%, 68%);
 	color: #fff;
-}
-.social-medial{
-	background-color: yellow;
-}
+	font-weight:600;
+	}
+	.input-group-btn{
+		border-radius: 60px;
+		box-sizing: 60px;
+	}
