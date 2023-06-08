@@ -204,3 +204,16 @@
 .pagen{
   padding-left: 80px;
 }
+
+.containerfoot {
+  display: flex;
+padding-left: 100px;
+}
+
+.column2 {
+  flex: 1;
+  margin-right: 20px; /* Optional: Add margin between the columns */
+}
+.column2 h3{
+  padding-top: 5px;
+}

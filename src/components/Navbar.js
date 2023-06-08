@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import brand from "./../vertexlogo.png";
 import logo1 from "./../Vertexhubblack .png";
 import logo2 from "./../Vertexhubblack .png";
-import Hamburger from "./../burger-menu.svg";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,9 +35,9 @@ const Navbar = () => {
             <li>
               <NavLink to="/about">About Us</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/careers">Careers</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>

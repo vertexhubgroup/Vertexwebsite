@@ -15,7 +15,7 @@ const ContactForm = () => {
     console.log(conFom)
   }
   return (
-    <div className='form' style={{marginTop:'50px',padding:" 20px 20px"}} >
+    <div className='form' style={{marginTop:'50px',padding:" 10px 10px"}} >
       <h2 >Connect With Us</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">

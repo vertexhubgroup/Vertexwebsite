@@ -18,8 +18,9 @@
 	border: 1px solid #243c4f;
 	}
 	.newsletter .content .btn {
-	min-height: 8vh; 
-	width: 5vw;
+	min-height: 10vh; 
+	padding-right: 20px;
+	width: 7vw;
 	border-radius:15;
 	background: hsl(123, 62%, 68%);
 	color: #fff;
@@ -28,4 +29,9 @@
 	.input-group-btn{
 		border-radius: 60px;
 		box-sizing: 60px;
+		padding-left: 50px;
 	}
+	.form-control{
+		width: 100vw;
+	}
+	
