@@ -9,6 +9,8 @@ import boxed from "./../boxed.jpg";
 import bren from "./../bren.jpg";
 import ImageGrid from "../components/ImageGrid";
 import ImageCarousel from "../components/ImageCarousel";
+import autoAnimate from '@formkit/auto-animate'
+
 const Home = () => {
   return (
     <>
