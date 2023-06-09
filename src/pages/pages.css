@@ -50,7 +50,6 @@
   top: 0;
   left: 0;
   width: 100%;
-
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -94,13 +93,6 @@
     transform: translateX(10px);
   }
 }
-
-
-
-/* .quotes span {
-  font-weight: bolder;
-  padding-left: 30px;
-} */
  img {
   height: 30%;
   width: 30%;
@@ -196,8 +188,7 @@
 .cont {
   position: relative;
   height: 70vh;
-  background-image: url("./../boxed.jpg"); /* Replace "background-image.jpg" with the path to your background image */
-  background-size: cover;
+  background-image: url("./../boxed.jpg"); 
   background-position: center;
 }
 
@@ -234,7 +225,7 @@
 
 .column2 {
   flex: 1;
-  margin-right: 20px; /* Optional: Add margin between the columns */
+  margin-right: 20px; 
 }
 .column2 h3 {
   padding-top: 5px;
@@ -315,7 +306,10 @@
 }
 figcaption {
   text-align: center;
-  padding-top: 70px;
+  padding: 30px;
+}
+figure{
+  align-items: center;
 }
 .list-group {
   padding: 30px 30px;

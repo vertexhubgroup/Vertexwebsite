@@ -60,7 +60,7 @@ const Services = () => {
           >
             <figure>
               <img src={dev} alt="Software Development" />
-              <figcaption>software development</figcaption>
+              <figcaption>Software Development</figcaption>
             </figure>
           </div>
 
@@ -70,7 +70,7 @@ const Services = () => {
           >
             <figure>
               <img src={cloud} alt="Cloud Computing" />
-              <figcaption>Cloud computing</figcaption>
+              <figcaption>Network Infrastructure & Services</figcaption>
             </figure>
           </div>
 
@@ -82,7 +82,7 @@ const Services = () => {
           >
             <figure>
               <img src={services} alt="Services" />
-              <figcaption>Services</figcaption>
+              <figcaption>Hardware sales & support</figcaption>
             </figure>
           </div>
 
@@ -92,7 +92,7 @@ const Services = () => {
           >
             <figure>
               <img src={support} alt="Support" />
-              <figcaption>support</figcaption>
+              <figcaption>IT support & Managed Services</figcaption>
             </figure>
           </div>
         </div>
@@ -159,48 +159,44 @@ const Services = () => {
               )}
 
               {selectedColumn === "dev" && (
-                  <p>
-                  We consult for high-end technology implementation at
-                  clients’ site or implementation of new technology according
-                  to the clients’ requirement or upgrading, enhancing the
-                  existing facilities in the clients end with the new
-                  technology integrated with the existing one.
-                </p>
-                
-              )
-              
-              }
-
-              {selectedColumn === "cloud" && (  <p>
-                    We consult for high-end technology implementation at
-                    clients’ site or implementation of new technology according
-                    to the clients’ requirement or upgrading, enhancing the
-                    existing facilities in the clients end with the new
-                    technology integrated with the existing one.
-                  </p>)
-              }
-
-              {selectedColumn === "services" &&
-              (
                 <p>
-                We consult for high-end technology implementation at
-                clients’ site or implementation of new technology according
-                to the clients’ requirement or upgrading, enhancing the
-                existing facilities in the clients end with the new
-                technology integrated with the existing one.
-              </p>
-              ) 
-              }
+                  We consult for high-end technology implementation at clients’
+                  site or implementation of new technology according to the
+                  clients’ requirement or upgrading, enhancing the existing
+                  facilities in the clients end with the new technology
+                  integrated with the existing one.
+                </p>
+              )}
 
-              {selectedColumn === "support" && 
-              (  <p>
-                We consult for high-end technology implementation at
-                clients’ site or implementation of new technology according
-                to the clients’ requirement or upgrading, enhancing the
-                existing facilities in the clients end with the new
-                technology integrated with the existing one.
-              </p>)
-              }
+              {selectedColumn === "cloud" && (
+                <p>
+                  We consult for high-end technology implementation at clients’
+                  site or implementation of new technology according to the
+                  clients’ requirement or upgrading, enhancing the existing
+                  facilities in the clients end with the new technology
+                  integrated with the existing one.
+                </p>
+              )}
+
+              {selectedColumn === "services" && (
+                <p>
+                  We consult for high-end technology implementation at clients’
+                  site or implementation of new technology according to the
+                  clients’ requirement or upgrading, enhancing the existing
+                  facilities in the clients end with the new technology
+                  integrated with the existing one.
+                </p>
+              )}
+
+              {selectedColumn === "support" && (
+                <p>
+                  We consult for high-end technology implementation at clients’
+                  site or implementation of new technology according to the
+                  clients’ requirement or upgrading, enhancing the existing
+                  facilities in the clients end with the new technology
+                  integrated with the existing one.
+                </p>
+              )}
             </ul>
           )}
         </div>
