@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import consultancy from "./../consultancy.png";
+import consultancy from "./../consultancy-removebg-preview.png";
 import support from "./../support.jpg";
-import cloud from "./../cloud-computing.png";
+import cloud from "./../cloud-computing-removebg-preview.png";
 import services from "./../male-services-support-icon.png";
-import dev from "./../software dev.png";
+import dev from "./../software_dev-removebg-preview.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
