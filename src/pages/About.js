@@ -85,6 +85,8 @@ const About = () => {
           <img src={logo5} alt="Your Image" className="logos" />
         </div>
       </div>
+      <br/>
+
     </>
   );
 };

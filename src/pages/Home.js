@@ -104,17 +104,27 @@ const Home = () => {
       </div>
       <div className="cards">
         <div className="card">
-          <h2>Column 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h4>Drive competitive advantage</h4>
+          <p>
+            {" "}
+            We can help you drive competitive advantage by solving some of the
+            major business and technology challenges that you face.
+          </p>
         </div>
         <div className="card">
-          <h2>Column 2</h2>
-          <p>Nulla facilisi. Vestibulum condimentum velit id elit sodales.</p>
-        </div>
+        <h4>Drive competitive advantage</h4>
+        <p>
+            {" "}
+            We can help you drive competitive advantage by solving some of the
+            major business and technology challenges that you face.
+          </p>        </div>
         <div className="card">
-          <h2>Column 3</h2>
-          <p>Curabitur ac ultrices sapien, at varius nunc consectetur ac.</p>
-        </div>
+        <h4>Drive competitive advantage</h4>
+        <p>
+            {" "}
+            We can help you drive competitive advantage by solving some of the
+            major business and technology challenges that you face.
+          </p>        </div>
       </div>
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
       <br />
@@ -139,6 +149,7 @@ const Home = () => {
           <img src={logo5} alt="Your Image" className="logos" />
         </div>
       </div>
+      <br/>
     </>
   );
 };

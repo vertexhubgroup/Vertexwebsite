@@ -90,6 +90,8 @@ const Contacts = () => {
           </div>
         </div>
       </div>
+      <br/>
+
     </>
   );
 };

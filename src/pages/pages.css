@@ -352,7 +352,7 @@ list-group p {
 .card {
   flex: 1;
   margin: 20px ;
-  padding: 80px;
+  padding: 50px;
   background-color: #ccc;
   transition: background-color 0.3s ease;
 }
