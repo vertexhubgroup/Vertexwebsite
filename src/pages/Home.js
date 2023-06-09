@@ -9,14 +9,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faQuote } from "@fortawesome/free-brands-svg-icons";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 import "animate.css";
 import "./QuoteAnimation.css"; // Import the CSS file for the animation
 
 import bren from "./../bren.jpg";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
-
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -27,9 +26,19 @@ const Home = () => {
       setTimeout(() => {
         setAnimate(false);
       }, 1000); // Adjust the duration of the animation
-    }, 3000); // Adjust the interval between animations
+    }, 3000); 
 
     return () => clearInterval(animationInterval);
+  }, []);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Mark the component as loaded after a short delay
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
   return (
     <>
@@ -37,7 +46,7 @@ const Home = () => {
       <div>
         <div className="content">
           <div>
-            <div className="abouthome">
+            <div className={`abouthome ${loaded ? "animate-slide-in" : ""}`}>
               <strong>
                 <h1>
                   We aim to deliver sustainable value by providing high quality
@@ -65,12 +74,15 @@ const Home = () => {
 
       <div className="quotes">
         <strong>
-        <FontAwesomeIcon icon={faQuoteLeft} className="fa-quote-left"  flip style={{paddingLeft:"90px"}} />
-          
-          
+          <FontAwesomeIcon
+            icon={faQuoteLeft}
+            className="fa-quote-left"
+            flip
+            style={{ paddingLeft: "90px" }}
+          />
+
           {/* <span>"</span> */}
         </strong>
-       
         <p>
           we are a leading provider of analytics software,solutions and services
           that transform <br />
@@ -78,17 +90,20 @@ const Home = () => {
           processes around them.
         </p>
         <img
-        src={logo}
-        alt="Your Image"
-        className={`image ${animate ? "rotate" : ""}`}
-      />{" "}
+          src={logo}
+          alt="Your Image"
+          className={`image ${animate ? "rotate" : ""}`}
+        />{" "}
         <strong>
-        <FontAwesomeIcon icon={faQuoteRight} className="fa-quote-right"  flip />
-
+          <FontAwesomeIcon
+            icon={faQuoteRight}
+            className="fa-quote-right"
+            flip
+          />
         </strong>{" "}
       </div>
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
-      <br/>
+      <br />
       <div class="grid-container">
         <div class="grid-item">
           <img src={logo1} alt="Your Image" className="logos" />
