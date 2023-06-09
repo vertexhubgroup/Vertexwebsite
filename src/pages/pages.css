@@ -282,14 +282,14 @@ padding-left: 100px;
 }
 .columnconsultancy{
   align-items: center;
-  flex-basis: 20%; /* Each column takes up 20% of the container width */
+  flex-basis: 20%; 
   background-color: white;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 .columncloud {
   align-items: center;
-  flex-basis: 20%; /* Each column takes up 20% of the container width */
+  flex-basis: 20%; 
   background-color: white;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -313,4 +313,7 @@ figcaption{
 }
 list-group p{
   padding: 30p;
+}
+.column.active {
+  background-color: #5BC82D; 
 }
