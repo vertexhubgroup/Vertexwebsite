@@ -18,7 +18,7 @@ const Contacts = () => {
               <h1>Contact Us</h1>
             </div>
 
-            <div className="image1"></div>
+            <div className="contactsimage"></div>
           </div>
         </div>
         <div>
