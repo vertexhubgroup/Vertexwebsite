@@ -9,7 +9,7 @@
   margin-top: 50px;
 }
 .image1 {
-  background-image: url(./../rainbow.jpg);
+  background-image: url(./../shaking\ hands.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -57,18 +57,6 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
-/* .portrait {
-
-  justify-content: flex-end;
-  background-color: rgb(226, 102, 102);
-  margin-left: 50%;
-  margin-top: 1%;
-  width: 50%;
-  opacity: 70%;
-  padding-left: 7%;
-  height: 50vh;
-} */
-
 .about {
   margin-top: 7%;
   background-color: white;
@@ -80,11 +68,8 @@
   margin-top: 7%;
   text-align: center;
   padding-top: 80px;
-  /* width: 50%;
-  opacity: 70%; */
   height: 400px;
   color: white;
-  /* background-color: white; */
 }
 .abouthome {
   opacity: 0;
@@ -112,11 +97,11 @@
 
 
 
-.quotes span {
+/* .quotes span {
   font-weight: bolder;
   padding-left: 30px;
-}
-img {
+} */
+ img {
   height: 30%;
   width: 30%;
   margin-left: 60%;

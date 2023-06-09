@@ -158,13 +158,49 @@ const Services = () => {
                 </>
               )}
 
-              {selectedColumn === "dev" && <p>we are here to work</p>}
+              {selectedColumn === "dev" && (
+                  <p>
+                  We consult for high-end technology implementation at
+                  clients’ site or implementation of new technology according
+                  to the clients’ requirement or upgrading, enhancing the
+                  existing facilities in the clients end with the new
+                  technology integrated with the existing one.
+                </p>
+                
+              )
+              
+              }
 
-              {selectedColumn === "cloud" && <p>we are here to work</p>}
+              {selectedColumn === "cloud" && (  <p>
+                    We consult for high-end technology implementation at
+                    clients’ site or implementation of new technology according
+                    to the clients’ requirement or upgrading, enhancing the
+                    existing facilities in the clients end with the new
+                    technology integrated with the existing one.
+                  </p>)
+              }
 
-              {selectedColumn === "services" && <p>we are here to work</p>}
+              {selectedColumn === "services" &&
+              (
+                <p>
+                We consult for high-end technology implementation at
+                clients’ site or implementation of new technology according
+                to the clients’ requirement or upgrading, enhancing the
+                existing facilities in the clients end with the new
+                technology integrated with the existing one.
+              </p>
+              ) 
+              }
 
-              {selectedColumn === "support" && <p>we are here to work</p>}
+              {selectedColumn === "support" && 
+              (  <p>
+                We consult for high-end technology implementation at
+                clients’ site or implementation of new technology according
+                to the clients’ requirement or upgrading, enhancing the
+                existing facilities in the clients end with the new
+                technology integrated with the existing one.
+              </p>)
+              }
             </ul>
           )}
         </div>

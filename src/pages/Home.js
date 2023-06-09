@@ -91,7 +91,7 @@ const Home = () => {
         </p>
         <img
           src={logo}
-          alt="Your Image"
+          alt="logo" style={{alignItems:"center",paddingRight:"80px"}}
           className={`image ${animate ? "rotate" : ""}`}
         />{" "}
         <strong>
