@@ -3,9 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import logo from "./../Vertexhubblack .png"
+import logo from "./../Vertexhubblack .png";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -25,12 +24,14 @@ const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <div
-              className="logo"
-              style={{height:"100px", marginLeft:"-300px" }}
-            >
-              <img src={logo} alt="logo" />
-            </div>
+            <a href="#" >
+              <div
+                className="logo"
+                style={{ height: "100px", marginLeft: "-300px" }}
+              >
+                <img src={logo} alt="logo" />
+              </div>
+            </a>
             <Heading className="brands">Our Brands</Heading>
             <FooterLink href="#">vertexhub.shop</FooterLink>
             <FooterLink href="#">Vertex Pay</FooterLink>
@@ -44,8 +45,8 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>legal</Heading>
-            <FooterLink href="/terms_of_service">Terms of Service</FooterLink>
-            <FooterLink href="/privacy_policy">Privacy Policy</FooterLink>
+            <FooterLink href="/Terms_of_service">Terms of Service</FooterLink>
+            <FooterLink href="/Privacy_policy">Privacy Policy</FooterLink>
           </Column>
           <Column className="social-media" style={{ display: "block" }}>
             <section class="newsletter">

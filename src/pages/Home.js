@@ -5,12 +5,17 @@ import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
 import boxed from "./../boxed.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { faQuote } from "@fortawesome/free-brands-svg-icons";
 import React, { useState, useEffect } from 'react';
 
 import "animate.css";
 import "./QuoteAnimation.css"; // Import the CSS file for the animation
 
 import bren from "./../bren.jpg";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 
 const Home = () => {
@@ -52,7 +57,7 @@ const Home = () => {
 
         <h1>Why Vertexhubgroup?</h1>
         <h5>
-          we are a leading provider of analytics software,solutions and services
+          We are a leading provider of analytics software,solutions and services
           that transform the way organizations understand their customers and
           optimize business processes around them.
         </h5>
@@ -60,15 +65,12 @@ const Home = () => {
 
       <div className="quotes">
         <strong>
-          {" "}
-          <span>"</span>
+        <FontAwesomeIcon icon={faQuoteLeft} className="fa-quote-left"  flip style={{paddingLeft:"90px"}} />
+          
+          
+          {/* <span>"</span> */}
         </strong>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+       
         <p>
           we are a leading provider of analytics software,solutions and services
           that transform <br />
@@ -81,11 +83,12 @@ const Home = () => {
         className={`image ${animate ? "rotate" : ""}`}
       />{" "}
         <strong>
-          {" "}
-          <span>"</span>
+        <FontAwesomeIcon icon={faQuoteRight} className="fa-quote-right"  flip />
+
         </strong>{" "}
       </div>
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
+      <br/>
       <div class="grid-container">
         <div class="grid-item">
           <img src={logo1} alt="Your Image" className="logos" />

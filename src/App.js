@@ -9,6 +9,8 @@ import Contacts from "./pages/Contacts";
 // import Careers from "./pages/Careers";
 import  Footer  from "./components/Footer";
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Terms_of_service from "./pages/Terms_of_service";
+import Privacy_policy from "./pages/Privacy_policy";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         {/* <Route path="/careers" element={<Careers />} /> */}
 
         <Route path="/contact" element={<Contacts />} />
+        <Route path="/" element={<Terms_of_service />} />
+        <Route path="/" element={<Privacy_policy />} />
 
       </Routes>
       <Footer/>
