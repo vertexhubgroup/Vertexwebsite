@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 
-const Services = ({ imageSrc, caption }) => {
+const Services = () => {
   const [selectedColumn, setSelectedColumn] = useState(null);
 
   const handleColumnClick = (column) => {
@@ -40,7 +40,7 @@ const Services = ({ imageSrc, caption }) => {
 
       <div className="secondsection">
         <h2>Explore our services</h2>
-
+        <br />
         <div className="con">
           <div
             onClick={() => handleColumnClick("consultancy")}
@@ -50,7 +50,7 @@ const Services = ({ imageSrc, caption }) => {
           >
             <figure>
               <img src={consultancy} alt="Consultancy" />
-              <figcaption>consultancy</figcaption>
+              <figcaption>Consultancy</figcaption>
             </figure>
           </div>
 

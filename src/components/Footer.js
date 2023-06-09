@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import logo from "./../Vertexhubblack .png"
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -24,21 +25,27 @@ const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <Heading>Our Brands</Heading>
+            <div
+              className="logo"
+              style={{height:"100px", marginLeft:"-300px" }}
+            >
+              <img src={logo} alt="logo" />
+            </div>
+            <Heading className="brands">Our Brands</Heading>
             <FooterLink href="#">vertexhub.shop</FooterLink>
             <FooterLink href="#">Vertex Pay</FooterLink>
           </Column>
           <Column>
             <Heading>Useful links</Heading>
-            <FooterLink href="#">Services</FooterLink>
-            <FooterLink href="#">About Us</FooterLink>
-            <FooterLink href="#">Careers</FooterLink>
-            <FooterLink href="#">Contacts</FooterLink>
+            <FooterLink href="/services">Services</FooterLink>
+            <FooterLink href="/about">About Us</FooterLink>
+            {/* <FooterLink href="#">Careers</FooterLink> */}
+            <FooterLink href="/contact">Contacts</FooterLink>
           </Column>
           <Column>
             <Heading>legal</Heading>
-            <FooterLink href="#">Terms of Service</FooterLink>
-            <FooterLink href="#">Privacy Policy</FooterLink>
+            <FooterLink href="/terms_of_service">Terms of Service</FooterLink>
+            <FooterLink href="/privacy_policy">Privacy Policy</FooterLink>
           </Column>
           <Column className="social-media" style={{ display: "block" }}>
             <section class="newsletter">

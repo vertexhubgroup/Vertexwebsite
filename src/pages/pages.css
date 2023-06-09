@@ -80,10 +80,13 @@
 }
 .abouthome{
   margin-top: 7%;
-  width: 50%;
-  opacity: 70%;
+  text-align: center;
+  padding-top: 80px;
+  /* width: 50%;
+  opacity: 70%; */
   height: 400px;
-  background-color: white;
+  color: white;
+  /* background-color: white; */
 }
 .quotes span{
   font-weight: bolder;
@@ -204,7 +207,7 @@
   padding: 20px;
   align-items: center;
   /* justify-content: flex-end; */
-  background-color: rgb(226, 102, 102);
+  background-color: white;
   margin-left: 100%;
   margin-top: 1%;
   opacity: 70%;
@@ -307,6 +310,7 @@ figcaption{
 }
 .list-group{
   padding: 30px 30px;
+  text-decoration: none;
 }
 .list-group h5{
   text-align: center;

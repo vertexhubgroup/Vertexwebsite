@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "./../vertexlogo.png";
 import logo1 from "./../logo1.png";
 import logo2 from "./../logo2.png";
@@ -6,12 +5,27 @@ import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
 import boxed from "./../boxed.jpg";
+import React, { useState, useEffect } from 'react';
+
+import "animate.css";
+import "./QuoteAnimation.css"; // Import the CSS file for the animation
+
 import bren from "./../bren.jpg";
-import ImageGrid from "../components/ImageGrid";
-import ImageCarousel from "../components/ImageCarousel";
-import autoAnimate from '@formkit/auto-animate'
+
 
 const Home = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const animationInterval = setInterval(() => {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 1000); // Adjust the duration of the animation
+    }, 3000); // Adjust the interval between animations
+
+    return () => clearInterval(animationInterval);
+  }, []);
   return (
     <>
       <title>Vertexhb group</title>
@@ -19,10 +33,12 @@ const Home = () => {
         <div className="content">
           <div>
             <div className="abouthome">
-              <p>
-                We aim to deliver sustainable value by providing high quality
-                technology services and solutions.
-              </p>
+              <strong>
+                <h1>
+                  We aim to deliver sustainable value by providing high quality
+                  technology services and solutions.
+                </h1>
+              </strong>
             </div>
 
             <div className="blue"></div>
@@ -59,7 +75,11 @@ const Home = () => {
           the way organizations understand their customers and optimize business
           processes around them.
         </p>
-        <img src={logo} alt="Your Image" className="image" />
+        <img
+        src={logo}
+        alt="Your Image"
+        className={`image ${animate ? "rotate" : ""}`}
+      />{" "}
         <strong>
           {" "}
           <span>"</span>

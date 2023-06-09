@@ -5,6 +5,8 @@ import logo2 from "./../logo2.png";
 import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import bren from "./../bren.jpg";
 import ImageCarousel from "../components/ImageCarousel";
 const About = () => {
@@ -57,10 +59,9 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-     
 
-      <div class="pagination"></div>
+        
+      </div>
 
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
       <div class="grid-container">
