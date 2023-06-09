@@ -345,3 +345,18 @@ list-group p {
 .column.active {
   background-color: #5bc82d;
 }
+.cards {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  margin: 20px ;
+  padding: 80px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #5BC82D;
+}

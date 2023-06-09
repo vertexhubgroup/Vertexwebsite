@@ -26,7 +26,7 @@ const Home = () => {
       setTimeout(() => {
         setAnimate(false);
       }, 1000); // Adjust the duration of the animation
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(animationInterval);
   }, []);
@@ -101,6 +101,20 @@ const Home = () => {
             flip
           />
         </strong>{" "}
+      </div>
+      <div className="cards">
+        <div className="card">
+          <h2>Column 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="card">
+          <h2>Column 2</h2>
+          <p>Nulla facilisi. Vestibulum condimentum velit id elit sodales.</p>
+        </div>
+        <div className="card">
+          <h2>Column 3</h2>
+          <p>Curabitur ac ultrices sapien, at varius nunc consectetur ac.</p>
+        </div>
       </div>
       <h2 style={{ textAlign: "center" }}>Our Patners</h2>
       <br />
