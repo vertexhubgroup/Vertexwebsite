@@ -17,6 +17,8 @@ const Services = () => {
   };
 
   return (
+    <>
+    <div className="body">
     <div className="content">
       <div className="about">
         <h1>Our Services</h1>
@@ -159,16 +161,21 @@ const Services = () => {
               )}
 
               {selectedColumn === "dev" && (
-                <p>
-                  We consult for high-end technology implementation at clients’
-                  site or implementation of new technology according to the
-                  clients’ requirement or upgrading, enhancing the existing
-                  facilities in the clients end with the new technology
-                  integrated with the existing one.
-                </p>
+                <>
+                  <h5> Software Development</h5>
+                  <p>
+                    We consult for high-end technology implementation at
+                    clients’ site or implementation of new technology according
+                    to the clients’ requirement or upgrading, enhancing the
+                    existing facilities in the clients end with the new
+                    technology integrated with the existing one.
+                  </p>
+                </>
               )}
 
               {selectedColumn === "cloud" && (
+                <>
+                <h5>Network Infrastructure & Services</h5>
                 <p>
                   We consult for high-end technology implementation at clients’
                   site or implementation of new technology according to the
@@ -176,9 +183,13 @@ const Services = () => {
                   facilities in the clients end with the new technology
                   integrated with the existing one.
                 </p>
+                </>
+               
               )}
 
               {selectedColumn === "services" && (
+                <>
+                <h5>Hardware sales & support</h5>
                 <p>
                   We consult for high-end technology implementation at clients’
                   site or implementation of new technology according to the
@@ -186,9 +197,13 @@ const Services = () => {
                   facilities in the clients end with the new technology
                   integrated with the existing one.
                 </p>
+                </>
+              
               )}
 
               {selectedColumn === "support" && (
+                <>
+                <h5>IT support & Managed Services</h5>
                 <p>
                   We consult for high-end technology implementation at clients’
                   site or implementation of new technology according to the
@@ -196,12 +211,16 @@ const Services = () => {
                   facilities in the clients end with the new technology
                   integrated with the existing one.
                 </p>
+                </>
+              
               )}
             </ul>
           )}
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

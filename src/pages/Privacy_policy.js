@@ -3,6 +3,7 @@ import React from "react";
 const Privacy_policy = () => {
   return (
     <>
+    <div className="body">
       <h1>Vertexhub Group Privacy Policy</h1>
       <p>
         To help us achieve our goal of providing the highest quality products
@@ -21,6 +22,7 @@ const Privacy_policy = () => {
         policy on an ongoing basis so that you understand our current privacy
         policy.
       </p>
+      </div>
     </>
   );
 };

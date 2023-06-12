@@ -7,6 +7,11 @@ body {
   background-color: white;
 }
 
+
+.hide-navbar {
+  display: none;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;

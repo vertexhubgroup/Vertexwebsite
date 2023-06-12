@@ -42,116 +42,120 @@ const Home = () => {
   }, []);
   return (
     <>
-      <title>Vertexhb group</title>
-      <div>
-        <div className="content">
-          <div>
-            <div className={`abouthome ${loaded ? "animate-slide-in" : ""}`}>
-              <strong>
-                <h1>
-                  We aim to deliver sustainable value by providing high quality
-                  technology services and solutions.
-                </h1>
-              </strong>
-            </div>
+      <div className="body">
+        <title>Vertexhb group</title>
+        <div>
+          <div className="content">
+            <div>
+              <div className={`abouthome ${loaded ? "animate-slide-in" : ""}`}>
+                <strong>
+                  <h1>
+                    We aim to deliver sustainable value by providing high
+                    quality technology services and solutions.
+                  </h1>
+                </strong>
+              </div>
 
-            <div className="blue"></div>
+              <div className="blue"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <div className="middlecontent">
         <br />
+        <br />
+        <div className="middlecontent">
+          <br />
 
-        <h1>Why Vertexhubgroup?</h1>
-        <h5>
-          We are a leading provider of analytics software,solutions and services
-          that transform the way organizations understand their customers and
-          optimize business processes around them.
-        </h5>
-      </div>
+          <h1>Why Vertexhubgroup?</h1>
+          <h5>
+            We are a leading provider of analytics software,solutions and
+            services that transform the way organizations understand their
+            customers and optimize business processes around them.
+          </h5>
+        </div>
 
-      <div className="quotes">
-        <strong>
-          <FontAwesomeIcon
-            icon={faQuoteLeft}
-            className="fa-quote-left"
-            flip
-            style={{ paddingLeft: "90px" }}
-          />
+        <div className="quotes">
+          <strong>
+            <FontAwesomeIcon
+              icon={faQuoteLeft}
+              className="fa-quote-left"
+              flip
+              style={{ paddingLeft: "90px" }}
+            />
 
-          {/* <span>"</span> */}
-        </strong>
-        <p>
-          we are a leading provider of analytics software,solutions and services
-          that transform <br />
-          the way organizations understand their customers and optimize business
-          processes around them.
-        </p>
-        <img
-          src={logo}
-          alt="logo" style={{alignItems:"center",paddingRight:"80px"}}
-          className={`image ${animate ? "rotate" : ""}`}
-        />{" "}
-        <strong>
-          <FontAwesomeIcon
-            icon={faQuoteRight}
-            className="fa-quote-right"
-            flip
-          />
-        </strong>{" "}
-      </div>
-
-      
-      <div className="cards">
-        <div className="card">
-          <h4>Drive competitive advantage</h4>
+            {/* <span>"</span> */}
+          </strong>
           <p>
-            {" "}
-            We can help you drive competitive advantage by solving some of the
-            major business and technology challenges that you face.
+            we are a leading provider of analytics software,solutions and
+            services that transform <br />
+            the way organizations understand their customers and optimize
+            business processes around them.
           </p>
+          <img
+            src={logo}
+            alt="logo"
+            style={{ alignItems: "center", paddingRight: "80px" }}
+            className={`image ${animate ? "rotate" : ""}`}
+          />{" "}
+          <strong>
+            <FontAwesomeIcon
+              icon={faQuoteRight}
+              className="fa-quote-right"
+              flip
+            />
+          </strong>{" "}
         </div>
-        <div className="card">
-        <h4>Drive competitive advantage</h4>
-        <p>
+
+        <div className="cards">
+          <div className="card">
+            <h4>Drive competitive advantage</h4>
+            <p>
+              {" "}
+              We can help you drive competitive advantage by solving some of the
+              major business and technology challenges that you face.
+            </p>
+          </div>
+          <div className="card">
+            <h4>Drive competitive advantage</h4>
+            <p>
+              {" "}
+              We can help you drive competitive advantage by solving some of the
+              major business and technology challenges that you face.
+            </p>{" "}
+          </div>
+          <div className="card">
+            <h4>Drive competitive advantage</h4>
+            <p>
+              {" "}
+              We can help you drive competitive advantage by solving some of the
+              major business and technology challenges that you face.
+            </p>{" "}
+          </div>
+        </div>
+        <h2 style={{ textAlign: "center" }}>Our Patners</h2>
+        <br />
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src={logo1} alt="Your Image" className="logos" />
+          </div>
+          <div class="grid-item">
             {" "}
-            We can help you drive competitive advantage by solving some of the
-            major business and technology challenges that you face.
-          </p>        </div>
-        <div className="card">
-        <h4>Drive competitive advantage</h4>
-        <p>
+            <img src={logo2} alt="Your Image" className="logos" />
+          </div>
+          <div class="grid-item">
             {" "}
-            We can help you drive competitive advantage by solving some of the
-            major business and technology challenges that you face.
-          </p>        </div>
+            <img src={logo3} alt="Your Image" className="logos" />
+          </div>
+          <div class="grid-item">
+            {" "}
+            <img src={logo4} alt="Your Image" className="logos" />
+          </div>
+          <div class="grid-item">
+            {" "}
+            <img src={logo5} alt="Your Image" className="logos" />
+          </div>
+        </div>
+        <br />
       </div>
-      <h2 style={{ textAlign: "center" }}>Our Patners</h2>
-      <br />
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src={logo1} alt="Your Image" className="logos" />
-        </div>
-        <div class="grid-item">
-          {" "}
-          <img src={logo2} alt="Your Image" className="logos" />
-        </div>
-        <div class="grid-item">
-          {" "}
-          <img src={logo3} alt="Your Image" className="logos" />
-        </div>
-        <div class="grid-item">
-          {" "}
-          <img src={logo4} alt="Your Image" className="logos" />
-        </div>
-        <div class="grid-item">
-          {" "}
-          <img src={logo5} alt="Your Image" className="logos" />
-        </div>
-      </div>
-      <br/>
     </>
   );
 };
