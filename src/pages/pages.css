@@ -352,3 +352,7 @@ list-group p {
 .logos:hover {
   transform: scale(1.2);
 }
+.ternms{
+  text-align: center;
+  align-items: center;
+}

@@ -23,8 +23,8 @@ function App() {
         {/* <Route path="/careers" element={<Careers />} /> */}
 
         <Route path="/contact" element={<Contacts />} />
-        <Route path="/" element={<Terms_of_service />} />
-        <Route path="/" element={<Privacy_policy />} />
+        <Route path="/Terms_of_service" element={<Terms_of_service />} />
+        <Route path="/Privacy_policy" element={<Privacy_policy />} />
 
       </Routes>
       <Footer/>

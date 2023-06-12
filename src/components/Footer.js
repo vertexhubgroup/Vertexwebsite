@@ -59,7 +59,7 @@ const Footer = () => {
                         <input
                           type="email"
                           class="form-control"
-                          placeholder="Enter your email"
+                          placeholder="Email address"
                         />
                         <span class="input-group-btn">
                           <button class="btn" type="submit">

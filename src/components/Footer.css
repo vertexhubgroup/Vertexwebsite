@@ -3,7 +3,6 @@
 	margin:  auto;
 	text-align: center;
 	position: relative;
-	/* z-index: 2; */
  }
 	.newsletter .content p {
 	color: black;
@@ -12,15 +11,15 @@
 	height: 8vh;
 	border-color: #ffffff;
 	border-radius:0;
-	width: 7vw;
 	}
 	.newsletter .content.form-control:focus {
 	border: 1px solid #243c4f;
 	}
 	.newsletter .content .btn {
-	min-height: 10vh; 
-	padding-right: 20px;
-	width: 7vw;
+	min-height: 8vh; 
+	padding-left: 30px;
+	text-align: center;
+
 	border-radius:15;
 	background: hsl(123, 62%, 68%);
 	color: #fff;
@@ -29,9 +28,7 @@
 	.input-group-btn{
 		border-radius: 60px;
 		box-sizing: 60px;
-		padding-left: 50px;
-	}
-	.form-control{
-		width: 100vw;
-	}
+		padding-right: 40px;
+}
+	
 	
