@@ -31,4 +31,16 @@
 		padding-right: 40px;
 }
 	
-	
+@media (max-width: 768px) {
+	.logo {
+	  margin-left: 0;
+	  text-align: center;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.brands {
+	  margin-top: 20px;
+	}
+  }
+  

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo1 from "./../Vertexhubblack .png";
 import logo2 from "./../Vertexhubblack .png";
@@ -15,10 +15,14 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const handleNavLinkClick = () => {
+    setShowNavbar(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo" style={{height:"50%", width:"40%" ,marginLeft:"10px"}}>
+        <div className="logo" style={{ height: "50%", width: "40%", marginLeft: "10px" }}>
           <img src={logo2} alt="logo" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
@@ -27,19 +31,27 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" onClick={handleNavLinkClick}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/services" onClick={handleNavLinkClick}>
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About Us</NavLink>
+              <NavLink to="/about" onClick={handleNavLinkClick}>
+                About Us
+              </NavLink>
             </li>
             {/* <li>
               <NavLink to="/careers">Careers</NavLink>
             </li> */}
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact" onClick={handleNavLinkClick}>
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -41,7 +41,7 @@ const Services = () => {
       </div>
 
       <div className="secondsection">
-        <h2>Explore our services</h2>
+        <h2 style={{paddingRight:"50px"}}>Explore our services</h2>
         <br />
         <div className="con">
           <div
