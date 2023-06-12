@@ -59,7 +59,7 @@
 .about {
   margin-top: 7%;
   background-color: white;
-  width: 50%;
+  width: 40%;
   opacity: 70%;
   height: 400px;
 }
@@ -322,7 +322,7 @@ list-group p {
   padding: 30p;
 }
 .column.active {
-  background-color: #5bc82d;
+    border: 1px solid #5bc82d;
 }
 .cards {
   display: flex;
@@ -337,5 +337,18 @@ list-group p {
 }
 
 .card:hover {
-  background-color: #5BC82D;
+  border: 1px solid #5bc82d;
+}
+
+
+.grid-item {
+  overflow: hidden;
+}
+
+.logos {
+  transition: transform 0.3s ease;
+}
+
+.logos:hover {
+  transform: scale(1.2);
 }
