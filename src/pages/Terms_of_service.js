@@ -4,7 +4,7 @@ const Terms_of_service = () => {
   return (
     <>
 
-
+<div className="body">
       <h1>Terms of Service</h1>
 	  <div className="terms">
 	  <h5>What is Lorem Ipsum?</h5>
@@ -36,7 +36,7 @@ const Terms_of_service = () => {
           undoubtable source.{" "}
         </p>
 	  </div>
-     
+	  </div>
     </>
   );
 };
