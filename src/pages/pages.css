@@ -418,36 +418,7 @@ img {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.columndev img {
-  /* height: 10vh;
-  width: 10vw; */
-  height: 50%;
-  width: 30%;
-}
-.columnsupport img {
-  /* height: 10vh;
-  width: 10vw; */
-  height: 100%;
-  width: 50%;
-}
-.columnservices img {
-  /* height: 10vh;
-  width: 10vw; */
-  height: 100%;
-  width: 50%;
-}
-.columncloud img {
-  /* height: 10vh;
-  width: 10vw; */
-  height: 100%;
-  width: 50%;
-}
-.columnconsultancy img {
-  /* height: 10vh;
-  width: 10vw; */
-  height: 100%;
-  width: 50%;
-}
+
 .columnconsultancy {
   align-items: center;
   flex-basis: 20%;

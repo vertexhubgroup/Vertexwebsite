@@ -45,9 +45,7 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink to="/careers">Careers</NavLink>
-            </li> */}
+           
             <li>
               <NavLink to="/contact" onClick={handleNavLinkClick}>
                 Contact
