@@ -102,6 +102,8 @@ const Home = () => {
           />
         </strong>{" "}
       </div>
+
+      
       <div className="cards">
         <div className="card">
           <h4>Drive competitive advantage</h4>
