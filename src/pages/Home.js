@@ -63,9 +63,9 @@ const Home = () => {
         </div>
         <br />
         <br />
-        <div className="middlecontent">
+        <div className="middlecontent" style={{color:"white"}}>
           <br />
-          <h1>Why Vertexhubgroup?</h1>
+          <h1 >Why Vertexhubgroup?</h1>
           <h5>
             We are a leading provider of analytics software, solutions, and
             services that transform the way organizations understand their
@@ -73,7 +73,7 @@ const Home = () => {
           </h5>
         </div>
 
-        <div className="quotes">
+        <div className="quotes" style={{color:"white"}}>
           <strong>
             <FontAwesomeIcon
               icon={faQuoteLeft}
@@ -91,7 +91,7 @@ const Home = () => {
           <img
             src={logo}
             alt="logo"
-            style={{ alignItems: "center", paddingRight: "80px" }}
+            style={{ alignItems: "center", paddingRight: "100px" }}
             className={`image ${animate ? "rotate" : ""}`}
           />
           <strong>

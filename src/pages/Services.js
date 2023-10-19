@@ -60,7 +60,7 @@ const Services = () => {
             <br />
             <br />
             <br />
-            <h2 style={{paddingLeft:"50px 90px " }}>Explore our services</h2>
+            <h2 style={{alignItems:"center" }}>Explore our services</h2>
             <br />
             <br />
             <br />

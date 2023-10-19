@@ -40,7 +40,7 @@ const Footer = () => {
             <Heading>Useful links</Heading>
             <FooterLink href="/services">Services</FooterLink>
             <FooterLink href="/about">About Us</FooterLink>
-            {/* <FooterLink href="#">Careers</FooterLink> */}
+            <FooterLink href="#">Careers</FooterLink> 
             <FooterLink href="/contact">Contacts</FooterLink>
           </Column>
           <Column>
