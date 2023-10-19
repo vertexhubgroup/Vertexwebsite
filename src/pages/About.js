@@ -24,8 +24,8 @@ const About = () => {
           <br />
           <br />
 
-          <div className="paragraph">
-            <p>
+          <div className="paragraph" style={{ color:"white"}}>
+            <h5>
               Vertex Hub Group Limited provides a one-stop automated solution
               for your trade and industry. Depending on the size and field of
               your organisation, we have different products and services to meet
@@ -35,19 +35,10 @@ const About = () => {
               cost effective ICT infrastructure development and implementation
               of services. Our advancement is based on the skill and experience
               of the individuals working in the organisation
-            </p>
+            </h5>
           </div>
 
-          {/* <div className="portrait">
-          <br />
-          <h2>Our Mission</h2>
-          <br />
-          <p>
-            Our Mission is to address our cutsomers' pain areas such
-            <br />
-            that the customers may focus on their core business.
-          </p>
-        </div> */}
+         
           <div className="cont">
             <div className="background-image">
               <div className="green-box">

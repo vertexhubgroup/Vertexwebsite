@@ -8,7 +8,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 const Contacts = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the breakpoint as needed
@@ -26,10 +26,12 @@ const Contacts = () => {
               <div className="contactsimage"></div>
             </div>
           </div>
-          <div><br/>
-      {!isMobile && <div style={{ height: '50px' }} />} {/* Space only for non-mobile devices */}
-      <ContactForm />
-    </div>
+          <div>
+            <br />
+            {!isMobile && <div style={{ height: "50px" }} />}{" "}
+            {/* Space only for non-mobile devices */}
+            <ContactForm />
+          </div>
           <div
             style={{
               display: "flex",
@@ -65,24 +67,10 @@ const Contacts = () => {
           ></iframe>
         </div>
 
-        {/* <div>
-            <h3>Contact Information</h3>
-            <p>
-              We Are Here for You. <br /> How Can We Help You?
-            </p>
-          </div>
-          <div>
-            <h5>Name:</h5>
-            <p>Riverside Park, Waiyaki Way,Nairobi</p>
-          </div>
-          <div>
-            <h5>Contact:</h5>
-            <p>+254 700 354 050</p>
-          </div>
-          <div>
-            <h5>Email:</h5>
-            <p>info@vertexhubgroup.com</p>
-          </div> */}
+        
+        
+        
+        
         <div class="containerfoot">
           <div class="column2">
             <div>
