@@ -11,11 +11,11 @@ import logo2 from "./../logo2.png";
 import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
-import bren from "./../bren.jpg";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "animate.css";
 import "./QuoteAnimation.css";
+import "./Home.css";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -42,113 +42,63 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="body">
-        <title>Vertexhb group</title>
-        <div>
-          <div className="content">
-            <div>
-              <div className={`abouthome ${loaded ? "animate-slide-in" : ""}`}>
-                <strong>
-                  <h1>
-                    We aim to deliver sustainable value by providing high
-                    quality technology services and solutions.
-                  </h1>
-                </strong>
-              </div>
-
-              <div className="blue"></div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <br />
-        <div className="middlecontent" style={{color:"white"}}>
-          <br />
-          <h1 >Why Vertexhubgroup?</h1>
-          <h5>
-            We are a leading provider of analytics software, solutions, and
-            services that transform the way organizations understand their
-            customers and optimize business processes around them.
-          </h5>
-        </div>
-
-        <div className="quotes" style={{color:"white"}}>
-          <strong>
-            <FontAwesomeIcon
-              icon={faQuoteLeft}
-              className="fa-quote-left"
-              flip
-              style={{ paddingLeft: "90px" }}
-            />
-          </strong>
-          <p>
-            we are a leading provider of analytics software, solutions, and
-            services that transform <br />
-            the way organizations understand their customers and optimize
-            business processes around them.
+    <main className="home-page">
+      <title>Vertexhub group</title>
+      <section className="home-hero">
+        <div className={`hero-content ${loaded ? "animate-slide-in" : ""}`}>
+          <p className="eyebrow">Technology with direction</p>
+          <h1>Build what moves your business forward.</h1>
+          <p className="hero-copy">
+            Sustainable value through high-quality technology services and
+            solutions designed around the way your organization works.
           </p>
-          <img
-            src={logo}
-            alt="logo"
-            style={{ alignItems: "center", paddingRight: "100px" }}
-            className={`image ${animate ? "rotate" : ""}`}
-          />
-          <strong>
-            <FontAwesomeIcon
-              icon={faQuoteRight}
-              className="fa-quote-right"
-              flip
-            />
-          </strong>
+          <a className="hero-link" href="/services">Explore our services <span aria-hidden="true">&#8594;</span></a>
         </div>
+        <div className="hero-mark" aria-hidden="true"><span>V</span></div>
+        <div className="hero-scroll" aria-hidden="true"><span></span>Scroll to discover</div>
+      </section>
 
-        <div className="cards">
-          <div className="card">
-            <h4>Drive competitive advantage</h4>
-            <p>
-              We can help you drive competitive advantage by solving some of the
-              major business and technology challenges that you face.
-            </p>
-          </div>
-          <div className="card">
-            <h4>Drive competitive advantage</h4>
-            <p>
-              We can help you drive competitive advantage by solving some of the
-              major business and technology challenges that you face.
-            </p>
-          </div>
-          <div className="card">
-            <h4>Drive competitive advantage</h4>
-            <p>
-              We can help you drive competitive advantage by solving some of the
-              major business and technology challenges that you face.
-            </p>
-          </div>
+      <section className="home-section introduction">
+        <div className="section-label">01 / Our approach</div>
+        <div className="intro-copy">
+          <h2>Clarity for complex business challenges.</h2>
+          <p>
+            Vertexhub Group helps organizations understand their customers,
+            improve their processes, and make confident decisions with
+            analytics-led technology.
+          </p>
         </div>
+      </section>
 
-        <h2 style={{ textAlign: "center" }}>Our Partners</h2>
-        <br />
-        <div className="grid-container">
-          <div className="grid-item">
-            <img src={logo1} alt="Your Image" className="logos" />
-          </div>
-          <div className="grid-item">
-            <img src={logo2} alt="Your Image" className="logos" />
-          </div>
-          <div className="grid-item">
-            <img src={logo3} alt="Your Image" className="logos" />
-          </div>
-          <div className="grid-item">
-            <img src={logo4} alt="Your Image" className="logos" />
-          </div>
-          <div className="grid-item">
-            <img src={logo5} alt="Your Image" className="logos" />
-          </div>
+      <section className="home-section capability-section">
+        <div className="section-heading">
+          <div className="section-label">02 / What we bring</div>
+          <h2>Practical expertise.<br />Measurable momentum.</h2>
         </div>
-        <br />
-      </div>
-    </>
+        <div className="capability-grid">
+          <article className="capability-card"><span>01</span><h3>Competitive advantage</h3><p>Turn business and technology challenges into opportunities that set you apart.</p></article>
+          <article className="capability-card"><span>02</span><h3>Smarter decisions</h3><p>Use analytics and clear insight to move from questions to action with confidence.</p></article>
+          <article className="capability-card"><span>03</span><h3>Built to last</h3><p>Create adaptable solutions that keep delivering value as your organization grows.</p></article>
+        </div>
+      </section>
+
+      <section className="home-quote" aria-label="Vertexhub Group statement">
+        <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
+        <p>We transform the way organizations understand their customers and optimize the business around them.</p>
+        <div className="quote-logo-wrap"><img src={logo} alt="Vertexhub Group" className={`quote-logo ${animate ? "rotate" : ""}`} /></div>
+        <FontAwesomeIcon icon={faQuoteRight} className="quote-icon" />
+      </section>
+
+      <section className="home-section partners-section">
+        <div className="section-label">03 / In good company</div>
+        <div className="partners-heading"><h2>Our partners</h2><p>Collaboration is where meaningful progress starts.</p></div>
+        <div className="partner-grid">
+          {[logo1, logo2, logo3, logo4, logo5].map((partnerLogo, index) => (
+            <div className="partner-item" key={index}><img src={partnerLogo} alt={`Partner ${index + 1}`} /></div>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 };
 
