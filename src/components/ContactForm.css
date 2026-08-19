@@ -1,4 +1,28 @@
-/* .form{
-    padding-top: 60px;
-    background-color: yellow;
-} */
+.contact-form-card {
+    padding: clamp(28px, 4vw, 52px);
+    background: #fff;
+    border: 1px solid #dce4df;
+}
+
+.form-heading { max-width: 570px; margin-bottom: 38px; }
+.contact-eyebrow { margin: 0 0 16px; color: #84928e; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.form-heading h2 { margin: 0; color: #10212b; font: 600 clamp(2rem, 3.5vw, 3.2rem)/1.05 'Space Grotesk', sans-serif; }
+.form-heading > p:last-child { margin: 18px 0 0; color: #5d6c73; line-height: 1.65; }
+.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.field-group { display: flex; flex-direction: column; margin-bottom: 24px; }
+.field-group label { margin-bottom: 9px; color: #10212b; font-size: .82rem; font-weight: 700; }
+.field-group label span { color: #84928e; font-weight: 400; }
+.field-group input, .field-group select, .field-group textarea { width: 100%; box-sizing: border-box; border: 1px solid #dce4df; border-radius: 0; outline: 0; background: #f5f7f4; color: #10212b; font: 400 .95rem 'DM Sans', sans-serif; padding: 14px 15px; transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+.field-group textarea { resize: vertical; min-height: 130px; }
+.field-group input::placeholder, .field-group textarea::placeholder { color: #9aa7a4; }
+.field-group input:focus, .field-group select:focus, .field-group textarea:focus { border-color: #10212b; background: #fff; box-shadow: 0 0 0 3px rgba(216, 250, 88, .35); }
+.form-submit { display: flex; align-items: center; gap: 20px; margin-top: 4px; }
+.form-submit button { display: inline-flex; align-items: center; gap: 16px; border: 0; padding: 15px 20px; background: #10212b; color: #fff; cursor: pointer; font: 700 .85rem 'DM Sans', sans-serif; transition: background 180ms ease, transform 180ms ease; }
+.form-submit button span { color: #d8fa58; font-size: 1.2rem; }
+.form-submit button:hover { background: #203841; transform: translateY(-2px); }
+.form-submit small { color: #84928e; line-height: 1.4; }
+
+@media (max-width: 600px) {
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .form-submit { align-items: flex-start; flex-direction: column; gap: 14px; }
+}
