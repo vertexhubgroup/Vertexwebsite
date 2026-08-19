@@ -41,6 +41,7 @@ const Navbar = () => {
             <li><NavLink to="/" onClick={handleNavLinkClick}>Home</NavLink></li>
             <li><NavLink to="/services" onClick={handleNavLinkClick}>Services</NavLink></li>
             <li><NavLink to="/about" onClick={handleNavLinkClick}>About Us</NavLink></li>
+            <li><NavLink to="/careers" onClick={handleNavLinkClick}>Careers</NavLink></li>
             <li><NavLink to="/contact" onClick={handleNavLinkClick}>Contact</NavLink></li>
           </ul>
           <NavLink className="navbar-cta" to="/contact" onClick={handleNavLinkClick}>Start a conversation <span aria-hidden="true">&#8594;</span></NavLink>

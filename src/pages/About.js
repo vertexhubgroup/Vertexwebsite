@@ -4,6 +4,7 @@ import logo2 from "./../logo2.png";
 import logo3 from "./../logo3.png";
 import logo4 from "./../logo4.png";
 import logo5 from "./../logo5.png";
+import missionVideo from "./../pexels.mp4";
 import "./About.css";
 
 const values = [
@@ -45,7 +46,10 @@ const About = () => (
     </section>
 
     <section className="about-mission">
-      <div className="mission-image" role="img" aria-label="Two professionals working together"></div>
+      <video className="mission-video" autoPlay muted loop playsInline aria-hidden="true">
+        <source src={missionVideo} type="video/mp4" />
+      </video>
+      <div className="mission-overlay" aria-hidden="true"></div>
       <div className="mission-copy">
         <p className="about-section-label">02 / Our mission</p>
         <h2>Take care of the complexity, so you can focus on the core business.</h2>
